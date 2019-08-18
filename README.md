@@ -20,3 +20,17 @@ KAKAO-PAY ASSIGNMENT
 * Database
   * MySql (MARIA DB)
   
+* Package Structure
+src - ../controller/UrlShorteningController.java ==> # Main Controller
+      ../repository/UrlshorteningDAO.java =========> # Database Transaction 
+      ../repository/UrlShorteningMapper.xml =======> # SQL Code
+      ../service/UrlShorteningService.java ========> # Service Interface
+      ../service/UrlShorteningServiceImpl.java ====> # Service Main
+      ../util/messageUtil.java ====================> # Common Message
+      ../util/UrlShorteningUtil.java ==============> # ShorteningUrl Util
+      ../vo/ShortUrlVO.java =======================> # Value Object
+      
+webapp - css/style.css ============================> # Common css
+         resources/js/shortUrl.js =================> # Shortening Main javascript
+         WEB-INF/views/index.jsp ==================> # Main Page
+         WEB-INF/views/error/error.jsp ============> # Error Page
