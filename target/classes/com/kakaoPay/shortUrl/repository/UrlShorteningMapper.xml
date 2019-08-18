@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.kakaoPay.shortUrl.repository.UrlshorteningDAO">
+
+	<!-- SHORT URL 저장 -->
+	<insert id="insertUrl" parameterType="shortUrlVO">
+			INSERT INTO KP_SHORT_URL
+			VALUES ( #{srtUrl}, #{orgUrl}, SYSDATE() )
+	</insert>	
+	
+	<!-- ORIGINAL URL 조회 -->
+	<select id="selectUrl" parameterType="shortUrlVO" resultType="com.kakaoPay.shortUrl.vo.ShortUrlVO">
+		SELECT ORG_URL AS orgUrl, SRT_URL AS srtUrl
+		  FROM KP_SHORT_URL
+		  <where>
+		  	<if test="srtUrl != null ">
+		  	AND SRT_URL = #{srtUrl}
+		  	</if>
+		  	<if test="orgUrl != null "> 
+		  	AND ORG_URL = #{orgUrl}
+		  	</if>
+		  </where>
+	</select>
+	
+</mapper>
