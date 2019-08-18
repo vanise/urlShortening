@@ -67,11 +67,11 @@ webapp - css/style.css ============================> # Common css
 ---------------------
 1. 해결방안
 ```
-1. 입력받은 URL을 hashCode로 변환.
-2. 어떻게 ? String Class의 hashCode() 또는 Message-Digest를 이용한 MD5(128bit),SHA-256(160bit)를 이용.
-3. String Class의 hashCode는 int형태로 반환. [a-zA-Z]로 만드려면 int가 좋아보여 hashCode로 채택.
-4. [a-zA-Z]의 갯수의 총합은 52라, 52진수를 사용하기로함.
-5. URL을 String hashCode로 변환된 int를 52진수를 사용하여 [a-zA-Z]로 조합된 URL 생성.
+#### 1. 입력받은 URL을 hashCode로 변환.
+#### 2. 어떻게 ? String Class의 hashCode() 또는 Message-Digest를 이용한 MD5(128bit),SHA-256(160bit)를 이용.
+#### 3. String Class의 hashCode는 int형태로 반환. [a-zA-Z]로 만드려면 int가 좋아보여 hashCode로 채택.
+#### 4. [a-zA-Z]의 갯수의 총합은 52라, 52진수를 사용하기로함.
+#### 5. URL을 String hashCode로 변환된 int를 52진수를 사용하여 [a-zA-Z]로 조합된 URL 생성.
 ```
 
 2. 문제발생
