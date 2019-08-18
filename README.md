@@ -1,6 +1,6 @@
 KAKAO-PAY ASSIGNMENT
 =====================
-> 2019 KAKAOPAY 서치펌 공개 채용
+> 2019 **KAKAOPAY** 서치펌 공개 채용
 ## 개발환경
 
 * BackEnd
