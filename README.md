@@ -65,23 +65,23 @@ webapp - css/style.css ============================> # Common css
 
 문제해결 전략
 ---------------------
-1. 해결방안
+### 1. 해결방안
 ```
-#### 1. 입력받은 URL을 hashCode로 변환.
-#### 2. 어떻게 ? String Class의 hashCode() 또는 Message-Digest를 이용한 MD5(128bit),SHA-256(160bit)를 이용.
-#### 3. String Class의 hashCode는 int형태로 반환. [a-zA-Z]로 만드려면 int가 좋아보여 hashCode로 채택.
-#### 4. [a-zA-Z]의 갯수의 총합은 52라, 52진수를 사용하기로함.
-#### 5. URL을 String hashCode로 변환된 int를 52진수를 사용하여 [a-zA-Z]로 조합된 URL 생성.
+1. 입력받은 URL을 hashCode로 변환.
+2. 어떻게 ? String Class의 hashCode() 또는 Message-Digest를 이용한 MD5(128bit),SHA-256(160bit)를 이용.
+3. String Class의 hashCode는 int형태로 반환. [a-zA-Z]로 만드려면 int가 좋아보여 hashCode로 채택.
+4. [a-zA-Z]의 갯수의 총합은 52라, 52진수를 사용하기로함.
+5. URL을 String hashCode로 변환된 int를 52진수를 사용하여 [a-zA-Z]로 조합된 URL 생성.
 ```
 
-2. 문제발생
+### 2. 문제발생
 ```
 1. hashCode의 returnType은 int다. int의 최대값은 2147483647(10자리)이다. 그후에는 음수로 반환됨.
 2. 좋아. 음수로 반환되면 양수로 바꿔주자.
 3. Shortening된 URL이 생성된다! abCDEf...문자열의 최대값이 6자리다.
 ```
 
-3. 문제해결
+### 3. 문제해결
 ```
 1. Random Class를 사용할까 했으나, 처음에는 괜찮으나 버킷 사이즈가 모두 찼을때 무한루프 가능성이 있어 제외했다.
 2. 그럼 문자열 2자리를 더 채우려면 52 * 52, 2704만큼의 정수가 더 필요하다. 2704 가 넘으면 3자리수 생기기 
