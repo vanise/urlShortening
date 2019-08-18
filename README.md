@@ -36,3 +36,10 @@ webapp - css/style.css ============================> # Common css
          WEB-INF/views/index.jsp ==================> # Main Page
          WEB-INF/views/error/error.jsp ============> # Error Page
 ```
+
+* Bulid & Excute
+```
+ * Maven Project( Exisiting Maven Prohects ) Import
+ * server Tomcat 8 > Web Modules > path Edit > /  
+ * http://localhost:8080/ 가 아닌 http://localhost/ 를 Root로 설정 하려면 port 80으로 변경
+```
