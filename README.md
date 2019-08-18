@@ -41,5 +41,7 @@ webapp - css/style.css ============================> # Common css
 ```
  * Maven Project( Exisiting Maven Prohects ) Import
  * server Tomcat 8 > Web Modules > path Edit > /  
- * http://localhost:8080/ 가 아닌 http://localhost/ 를 Root로 설정 하려면 port 80으로 변경
+ * http://localhost:8080/ 가 아닌 http://localhost/ 를 ROOT로 설정 하려면 port 80으로 변경
+ * Tomcat server Excute
+ * ROOT PAGE : http://localhost:8080/
 ```
