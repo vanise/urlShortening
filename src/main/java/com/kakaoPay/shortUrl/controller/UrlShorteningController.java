@@ -69,9 +69,8 @@ public class UrlShorteningController {
         
     	/***********************************************************************
     	 * 1) 52진수(a-zA-Z)를 이용해 shortUrl을 생성 (알파벳 대,소문자만 이용하기 위해 52진수를 채택)
-    	 * 2) result가 error가 아니라면 
+    	 * 2) result가 error면 errorCd를 반환한다
     	 ***********************************************************************/
-        //String shortUrl = UrlShorteningUtil.UrlToKey(urlToHash);
         String shortUrl = urlShorteningService.changeUrlToShorteingUrl(urlToHash,vo);
         if("error".equals(shortUrl)) {
         	map.put("resultCd", shortUrl);

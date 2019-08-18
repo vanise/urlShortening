@@ -24,12 +24,6 @@ public class UrlShorteningUtil {
     	/**************************************************************************
     	 * 8자리의 shortening Url 생성을위해 subUrl을 더 계산해 2자리 문자열을 만들어준다
     	 **************************************************************************/
-//        Random random = new Random(System.currentTimeMillis());
-//        StringBuffer sb = new StringBuffer();
-//        for(int i=0; i < 3; i++) {
-//        	sb.append(random.nextInt(10));
-//        }
-//        int rndInt = Integer.parseInt(sb.toString());
     	while(subUrlId > 0) {
     		resultSb.append(baseKey.charAt( (int)(subUrlId%baseKeyLeng) ));
     		subUrlId = subUrlId/baseKeyLeng;

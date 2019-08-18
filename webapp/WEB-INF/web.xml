@@ -14,10 +14,6 @@
 	</welcome-file-list>
 
 	<!-- Context parameter ( 전역 파라미터 ) -->
-<!-- 	<context-param>
-		<param-name>contextConfigLocation</param-name>
-		<param-value>/WEB-INF/applicationContext.xml</param-value>
-	</context-param> -->
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
 		<param-value>/WEB-INF/mybatis-context.xml</param-value>

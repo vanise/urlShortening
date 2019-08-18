@@ -70,7 +70,6 @@
     main.prototype.alert = function(cd , msg) {
     	if(cd=="error"){
     		$('#megAlert').attr("class","alert alert-danger");
-    		
     	}else{
     		$('#megAlert').attr("class","alert alert-success");
     	}

@@ -9,7 +9,7 @@
 			VALUES ( #{srtUrl}, #{orgUrl}, SYSDATE() )
 	</insert>	
 	
-	<!-- ORIGINAL URL 조회 -->
+	<!-- URL 조회 -->
 	<select id="selectUrl" parameterType="shortUrlVO" resultType="com.kakaoPay.shortUrl.vo.ShortUrlVO">
 		SELECT ORG_URL AS orgUrl, SRT_URL AS srtUrl
 		  FROM KP_SHORT_URL
