@@ -8,7 +8,7 @@ KAKAO-PAY ASSIGNMENT
   * Spring 4.1.6.RELEASE
   * MyBatis 3.2.2
   * MAVEN
-  * Tomcat 8 
+  * Tomcat 8
   * lombok 1.16.4
   * Java SE Development Kit 1.8
   
@@ -42,7 +42,7 @@ webapp - css/style.css ============================> # Common css
 ```
  * Maven Project( Exisiting Maven Prohects ) Import
  * Text Encoding 설정 > Preferences > General > Workspace > Text File encoding > UTF-8로 변경
- * server Tomcat 8 > Web Modules > path 변경 > /  
+ * server Tomcat 8 > Web Modules > path 변경 > /  (Tomcat8 zip파일 Git Repository에 Upload)
  * http://localhost:8080/ 가 아닌 http://localhost/ 를 ROOT로 설정 하려면 port 80으로 변경
  * Tomcat server Excute
  * ROOT Page : http://localhost:8080/
