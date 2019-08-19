@@ -8,7 +8,7 @@ KAKAO-PAY ASSIGNMENT
   * Spring 4.1.6.RELEASE
   * MyBatis 3.2.2
   * MAVEN
-  * Tomcat 8
+  * Tomcat 8 
   * lombok 1.16.4
   * Java SE Development Kit 1.8
   
@@ -41,7 +41,8 @@ webapp - css/style.css ============================> # Common css
 * Bulid & Excute
 ```
  * Maven Project( Exisiting Maven Prohects ) Import
- * server Tomcat 8 > Web Modules > path Edit > /  
+ * Text Encoding 설정 > Preferences > General > Workspace > Text File encoding > UTF-8로 변경
+ * server Tomcat 8 > Web Modules > path 변경 > /  
  * http://localhost:8080/ 가 아닌 http://localhost/ 를 ROOT로 설정 하려면 port 80으로 변경
  * Tomcat server Excute
  * ROOT Page : http://localhost:8080/
@@ -52,7 +53,7 @@ webapp - css/style.css ============================> # Common css
 요구사항
 ---------------------
 * webapp으로 개발하고 URL 입력폼 제공 및 결과 출력.
-* URL Shortening Key는 8 Character 이내로 생서되어야 합니다.
+* URL Shortening Key는 8 Character 이내로 생되어야 합니다.
 * 동일한 URL에 대한 요청은 동일한 Shortening Key로 응답해야 합니다.
 * Shortening 된 URL을 요청받으면 원래 URL로 Redirect 합니다.
 * Shortening Key 생성 알고리즘은 직접 구현해야 합니다. (라이브러리 사용 불가)
@@ -99,6 +100,7 @@ webapp - css/style.css ============================> # Common css
 * 더 효율적인 hashCode 생성 방안을 고려
 * 사용자의 편의성을 더 고려하여 프로그래밍
 * hashCode에 대해 더 공부할 필요를 느낌
+* ProgressBar 필요를 느낌 (응답이 늦을때, 요청이 실행된건지 알수가없음)
 ---------------------------------------------------------------------------------------------------------------------
 
 Controller Url 정리
