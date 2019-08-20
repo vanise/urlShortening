@@ -40,7 +40,7 @@ webapp - css/style.css ============================> # Common css
 
 * Bulid & Excute
 ```
- * Maven Project( Exisiting Maven Prohects ) Import
+ * Maven Project( Exisiting Maven Projects ) Import
  * Text Encoding 설정 > Preferences > General > Workspace > Text File encoding > UTF-8로 변경
  * server Tomcat 8 > Web Modules > path 변경 > /  (Tomcat8 zip파일 Git Repository에 Upload)
  * http://localhost:8080/ 가 아닌 http://localhost/ 를 ROOT로 설정 하려면 port 80으로 변경
